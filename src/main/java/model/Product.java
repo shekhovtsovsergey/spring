@@ -4,17 +4,20 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
 @AllArgsConstructor
 public class Product {
 
-    private String id;
-    private String title;
+    private int id;
+    private String name;
     private int cost;
-    private List<Product> children;
+
+
+    public String toString() {
+        return "name = " + this.name + ", id = " + this.id;
+    }
+
 
 
 }
